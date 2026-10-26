@@ -1,0 +1,2 @@
+# Compatibility baseline; install with the Python used by the launcher.
+deepseek-harness-sdk==0.1.5rc1

@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+*.dpapi
+*.key
+connection.json
+chat_tasks/
+deepseek_tasks/
+work/

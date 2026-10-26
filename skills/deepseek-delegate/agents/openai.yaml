@@ -1,0 +1,6 @@
+interface:
+  display_name: "DeepSeek 任务派发与协作"
+  short_description: "按当前 Codex 项目派发 DeepSeek 任务，默认 Max 续聊并维护产物"
+  default_prompt: "使用 $deepseek-delegate 将指定任务派发给 DeepSeek，默认使用 Max 推理等级，在当前 Codex 项目下保存对话和产物，并由你复核维护。"
+policy:
+  allow_implicit_invocation: true

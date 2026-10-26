@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chat 对话与附件协作"
+  short_description: "将长文打包为 Markdown 附件交给 Chat，设置思考等级并核对完整回复"
+  default_prompt: "用 $chat-delegate 将这些材料打包为 Markdown 附件发给指定 Chat，正文用简短指令，思考等级默认高。"

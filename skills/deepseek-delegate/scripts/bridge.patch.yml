@@ -1,0 +1,22 @@
+- id: session-log-deepseek
+  disabled: true
+- id: plugin-package-inventory-deepseek
+  disabled: true
+- id: terminal-pwsh
+  config:
+    shellPath: !!js process.env.DSH_BRIDGE_PWSH
+    timeoutMs: 90000
+- id: persistent-pwsh
+  disabled: true
+- insert:
+    - id: bridge-shell-env
+      name: '@deepseek-ai/dsh-shell-env'
+    - id: bridge-shell-pwsh
+      name: '@deepseek-ai/dsh-pwsh-local'
+      config:
+        pwshPath: !!js process.env.DSH_BRIDGE_PWSH
+    - id: bridge-tool-pwsh
+      name: '@deepseek-ai/dsh-tool-pwsh'
+      config:
+        enableRunInBackground: false
+        promoteOnTimeout: false
